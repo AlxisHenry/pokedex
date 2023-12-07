@@ -59,7 +59,6 @@ const Results = ({ query, setPokemonId }: SearchResults): JSX.Element => {
           data-id={pokemon.url.split("/")[6]}
 					onClick={() => {
 						setPokemonId(parseInt(pokemon.url.split("/")[6]));
-						localStorage.setItem("pokemonId", pokemon.url.split("/")[6]);
 					}}
         >
           <img
