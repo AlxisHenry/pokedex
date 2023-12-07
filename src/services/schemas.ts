@@ -113,7 +113,7 @@ export const pokemonSchema = z.object({
 				front_shiny: z.string().nullable(),
 				front_shiny_female: z.string().nullable(),
 			}).nullable(),
-			official_artwork: z.object({
+			["official-artwork"]: z.object({
 				front_default: z.string().nullable(),
 			}).nullable(),
 		}),
